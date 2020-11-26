@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:id="@+id/RSS_Dialog" android:focusable="auto">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Введите ссылку на RSS"
+            android:textAlignment="center"
+            android:background="#6582C34A"
+            android:contentDescription="@string/app_name" android:textSize="24sp"/>
+
+    <EditText
+            android:id="@+id/rss_link"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:hint="https://site.com/rss/smth" android:selectAllOnFocus="true"/>
+    <Button
+            android:id="@+id/add"
+            android:text="Открыть"
+            android:onClick="getRss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+</LinearLayout>
